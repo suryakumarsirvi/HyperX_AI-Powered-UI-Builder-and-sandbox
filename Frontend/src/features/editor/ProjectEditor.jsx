@@ -92,8 +92,8 @@ export default function ProjectEditor() {
   // Key to force preview iframe refresh on file save or stream done
   const [iframeKey, setIframeKey] = useState(0);
 
-  const agentBaseUrl = `https://${sandboxId}.agent.cryboy.in`;
-  const previewUrl = `https://${sandboxId}.preview.cryboy.in`;
+  const agentBaseUrl = `http://${sandboxId}.agent.localhost`;
+  const previewUrl = `http://${sandboxId}.preview.localhost`;
 
   // Fetch file list on load
   useEffect(() => {
@@ -400,7 +400,7 @@ export default function ProjectEditor() {
           
           <div className="flex items-center gap-2">
             <span className="text-sm font-bold tracking-tight" style={{ color: 'var(--text)' }}>
-              Forge
+              HyperX
             </span>
             <span className="text-xs" style={{ color: 'var(--muted)' }}>/</span>
             <span className="text-xs font-mono font-semibold truncate max-w-[200px]" style={{ color: 'var(--text)' }}>

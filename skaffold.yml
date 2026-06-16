@@ -13,52 +13,52 @@ build:
 
   artifacts:
     - image: template
-      context: sandbox/template
+      context: sandbox-microservice/template
       docker:
         dockerfile: dockerfile
 
     - image: agent
-      context: sandbox/agent
+      context: sandbox-microservice/agent
       docker:
         dockerfile: dockerfile
 
     - image: sandbox
-      context: sandbox/server
+      context: sandbox-microservice/server
       docker:
         dockerfile: dockerfile
 
     - image: router
-      context: sandbox/router
+      context: sandbox-microservice/router
       docker:
         dockerfile: dockerfile
 
     - image: ai-orchestrator
-      context: ai
+      context: ai-microservice
       docker:
         dockerfile: dockerfile
     
     - image: auth
-      context: auth
+      context: auth-microservice
       docker:
         dockerfile: dockerfile
 
     - image: sync
-      context: sandbox/sync-agent
+      context: sandbox-microservice/sync-agent
       docker:
         dockerfile: dockerfile
 
 manifests:
   rawYaml:
-    - k8s/ai-deployment.yml
-    - k8s/ai-service.yml
-    - k8s/ingress.yml
-    - k8s/rbac.yml
-    - k8s/router-deployment.yml
-    - k8s/router-service.yml
-    - k8s/sandbox-server-deployment.yml
-    - k8s/sandbox-server-service.yml
-    - k8s/secrets.yml
-    - k8s/auth-deployment.yml
-    - k8s/auth-service.yml
+    - kubernetes/ai-deployment.yml
+    - kubernetes/ai-service.yml
+    - kubernetes/ingress.yml
+    - kubernetes/rbac.yml
+    - kubernetes/router-deployment.yml
+    - kubernetes/router-service.yml
+    - kubernetes/sandbox-server-deployment.yml
+    - kubernetes/sandbox-server-service.yml
+    - kubernetes/secrets.yml
+    - kubernetes/auth-deployment.yml
+    - kubernetes/auth-service.yml
 
 

@@ -130,7 +130,7 @@ export default function ProjectsDashboard() {
             </svg>
           </div>
           <span className="text-lg font-bold tracking-tight" style={{ color: 'var(--text)' }}>
-            Forge
+            HyperX
           </span>
         </div>
 

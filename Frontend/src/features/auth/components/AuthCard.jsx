@@ -19,10 +19,10 @@ export default function AuthCard({ title, error, loading, onSubmit, submitText, 
             </svg>
           </div>
           <h1 className="text-2xl font-bold tracking-tight mb-1" style={{ color: 'var(--text)' }}>
-            Forge
+            HyperX
           </h1>
           <p className="text-xs uppercase tracking-widest font-mono" style={{ color: 'var(--muted)' }}>
-            Sandbox Builder
+            Ui Builder
           </p>
         </div>
 

@@ -102,7 +102,7 @@ app.post("/api/sandbox/start", async (req, res) => {
     res.status(201).json({
         message: "Sandbox environment created successfully",
         sandboxId,
-        preview: `${sandboxId}.preview.cryboy.in`,
+        preview: `${sandboxId}.preview.localhost`,
     });
 
 })

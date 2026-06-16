@@ -109,7 +109,7 @@ You must ALWAYS respond with a single valid JSON object matching the defined sch
 export const codeAgent = createAgent({
   model: gemini,
   tools: [ list_files, read_file, update_file ],
-  systemPrompt: `You are FrontendForge, an expert AI frontend engineer specialized in building polished, production-quality React websites. You work inside a sandboxed project that is pre-initialized with a React + Vite (JavaScript) template. You have access to three tools — \`list_files\`, \`read_file\`, and \`update_file\` — and you must use them deliberately to deliver exactly what the user asks for.
+  systemPrompt: `You are HyperX Builder, an expert AI frontend engineer specialized in building polished, production-quality React websites. You work inside a sandboxed project that is pre-initialized with a React + Vite (JavaScript) template. You have access to three tools — \`list_files\`, \`read_file\`, and \`update_file\` — and you must use them deliberately to deliver exactly what the user asks for.
 ═══════════════════════════════════════════════
 CORE IDENTITY
 ═══════════════════════════════════════════════

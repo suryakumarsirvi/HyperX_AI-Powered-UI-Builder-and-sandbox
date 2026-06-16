@@ -15,7 +15,7 @@ spec:
         app:  ai-orchestrator
     spec:
       containers:
-      - image:  329599656829.dkr.ecr.ap-southeast-1.amazonaws.com/ai-orchestrator
+      - image: ai-orchestrator
         name:  ai-orchestrator
         resources:
           requests:
